@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+*~
+
+# VS Code
+.vscode/
+
+# CLion/JetBrains
+.idea/
+
+# Build files
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+
+# Debug symbols
+*.dSYM/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Lab-specific files
+___All_Errors.txt
+__osl/
+
+# Generated logs
+*.log
