@@ -1,0 +1,121 @@
+4ITA1@debian:~$ cd Anyuta_240911080
+4ITA1@debian:~/Anyuta_240911080$ cd lab3
+4ITA1@debian:~/Anyuta_240911080/lab3$ date
+Monday 19 January 2026 09:33:59 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo "write a shell script to find whether a given file is the directory or regular file"
+write a shell script to find whether a given file is the directory or regular file
+4ITA1@debian:~/Anyuta_240911080/lab3$ touch testfile.txt
+4ITA1@debian:~/Anyuta_240911080/lab3$ mkdir testdir
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_1.sh
+enter the file or directory name
+testfile.txt
+testfile.txt is a refular file
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_1.sh
+enter the file or directory name
+testdir
+testdir is a directory
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo 
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ date
+Monday 19 January 2026 09:47:04 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo "write a shell script to list all files containing the input pattern in the folder entered by user"
+write a shell script to list all files containing the input pattern in the folder entered by user
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_2.sh
+enter folder
+testdir
+enter pattern to search
+234
+Files containing '234' in 'testdir':
+grep: testdir/*: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_2.sh
+enter folder
+testdir
+enter pattern to search
+1234
+Files containing '1234' in 'testdir':
+testdir/test2.txt
+testdir/test3.txt
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_2.sh
+enter folder
+testdir
+enter pattern to search
+desi
+Files containing 'desi' in 'testdir':
+testdir/test1.txt
+testdir/test2.txt
+testdir/test3.txt
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo 
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ date
+Monday 19 January 2026 09:57:18 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo "write a shell script to replace all files with the .txt extension with .text in the current directory recursively"
+write a shell script to replace all files with the .txt extension with .text in the current directory recursively
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_3.sh
+Recursively renaming .txt files to .text 
+Renaming done
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ date
+Monday 19 January 2026 10:05:56 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo "write a shell script to calculate the gross salary"
+write a shell script to calculate the gross salary
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_4.sh
+enter basic salary:
+100000
+enter TA:
+25000
+Gross Salary: 135000.00
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ date
+Monday 19 January 2026 10:23:14 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo "write a program to copy all the files in the current folder to the new folderinput by user and also write a shell script to modify all occurences of 'ex:' with example: in all the files present in current folder only if 'ex' occurs at the start of the line or after a period"
+write a program to copy all the files in the current folder to the new folderinput by user and also write a shell script to modify all occurences of 'ex:' with example: in all the files present in current folder only if 'ex' occurs at the start of the line or after a period
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_5_2.sh
+Modifying files
+modified 10_lab3_1.png
+modified 10_lab3_1.sh
+modified 10_lab3_2.png
+modified 10_lab3_2.sh
+modified 10_lab3_3.png
+modified 10_lab3_3.sh
+modified 10_lab3_4.png
+modified 10_lab3_4.sh
+modified 10_lab3_5_1.sh
+modified 10_lab3_5_2.sh
+modified 10_lab3_5.png
+modified 10_lab3_5.sh
+modified 10_lab3_6.sh
+modified hello.sh
+modified testfile.text
+Modification done
+4ITA1@debian:~/Anyuta_240911080/lab3$ cd testdir
+4ITA1@debian:~/Anyuta_240911080/lab3/testdir$ bash 10_lab3_5_2.sh
+Modifying files
+modified 10_lab3_5_2.sh
+modified test1.text
+modified test2.text
+modified test3.text
+Modification done
+4ITA1@debian:~/Anyuta_240911080/lab3/testdir$ cd ..
+4ITA1@debian:~/Anyuta_240911080/lab3$ ^C
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo 
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo    
+
+4ITA1@debian:~/Anyuta_240911080/lab3$ date
+Monday 19 January 2026 10:53:02 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab3$ echo "write a shell script which deletes all the even numbered lines in a text file "
+write a shell script which deletes all the even numbered lines in a text file 
+4ITA1@debian:~/Anyuta_240911080/lab3$ bash 10_lab3_6.sh
+Enter the filename:
+Error: File not found.
+4ITA1@debian:~/Anyuta_240911080/lab3$ cd testdir
+4ITA1@debian:~/Anyuta_240911080/lab3/testdir$ bash 10_lab3_6.sh
+Enter the filename:
+test1.text
+Even numbered lines deleted successfully 
+4ITA1@debian:~/Anyuta_240911080/lab3/testdir$ 
+

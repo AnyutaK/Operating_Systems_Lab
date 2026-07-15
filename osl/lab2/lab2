@@ -1,0 +1,83 @@
+4ITA1@debian:~$ date
+Monday 12 January 2026 09:58:47 AM IST
+4ITA1@debian:~$ cd Anyuta_240911080
+4ITA1@debian:~/Anyuta_240911080$ cd lab2
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo Question1 the few commands learnt
+Question1 the few commands learnt
+4ITA1@debian:~/Anyuta_240911080/lab2$ ps
+    PID TTY          TIME CMD
+ 306238 pts/1    00:00:00 bash
+ 311923 pts/1    00:00:00 ps
+
+4ITA1@debian:~/Anyuta_240911080/lab2$  echo "2^5"|bc
+32
+4ITA1@debian:~/Anyuta_240911080/lab2$ sort -r Sample.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+unix commands are a set of commmands that are used to interact with unix operating system. 
+4ITA1@debian:~/Anyuta_240911080/lab2$ sort Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ wc *
+  2  42 268 Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ cut -c 1-50 Sample.txt
+unix commands are a set of commmands that are used
+Unix is a powerful multi user multi-tasking operat
+4ITA1@debian:~/Anyuta_240911080/lab2$ cut -c 60- Sample.txt
+act with unix operating system. 
+m that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ wc -c Sample.txt
+268 Sample.txt
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep --color "Unix" Sample.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep 'unix' Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+4ITA1@debian:~/Anyuta_240911080/lab2$ sed -e 's/unix/Unix/g' Sample.txt
+Unix commands are a set of commmands that are used to interact with Unix operating system. 
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ ps
+    PID TTY          TIME CMD
+ 306238 pts/1    00:00:00 bash
+ 335805 pts/1    00:00:00 ps
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo 
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ date
+Monday 12 January 2026 10:07:09 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.1 to select lines that have two characters exactly"
+Q2.1 to select lines that have two characters exactly
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -E '^..$' Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ awk '(length($0) == 2)'
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -E "^..$" Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.2 to select line that start with upper case charac"
+Q2.2 to select line that start with upper case charac
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '^[A-Z]' Sample.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.3 to select lines that end with period"
+Q2.3 to select lines that end with period
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '^.*\. *$' Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.4 select line that has 1 or more blank space'
+> "
+Q2.4 select line that has 1 or more blank space'
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '\s+' Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -E " +" Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.5 select lines and direct to another file which has digits as one of characters in that line"
+Q2.5 select lines and direct to another file which has digits as one of characters in that line
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '[0-9]' Sample.txt> newfile.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ cat newfile.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ date
+Monday 12 January 2026 10:47:10 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "question 3"
+4ITA1@debian:~/Anyuta_240911080/lab2$ vi studentInformation.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -c ":ICT:" studentInformation.txt
+6
+4ITA1@debian:~/Anyuta_240911080/lab2$ sed 's/:IT:/:Information Technology:/g' studentInformation.txt > ITStudents.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep "^1234:" studentInformation.txt | awk -F: '{ print "Average:" ($6+$7+$8)/3}'
+Average:70

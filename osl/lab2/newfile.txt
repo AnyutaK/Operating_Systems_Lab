@@ -1,0 +1,1 @@
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself

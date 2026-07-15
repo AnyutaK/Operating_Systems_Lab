@@ -1,0 +1,32 @@
+ITA1@debian:~/Anyuta_240911080/lab2$ echo 
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ date
+Monday 12 January 2026 10:07:09 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.1 Write grep commands to select the lines from a file that have exactly two characters."
+Q2.1 Write grep commands to select the lines from a file that have exactly two characters.
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -E '^..$' Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ awk '(length($0) == 2)'
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -E "^..$" Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.2 Write grep commands to select the lines from a file that start with the upper case letter."
+Q2.2 Write grep commands to select the lines from a file that start with the upper case letter.
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '^[A-Z]' Sample.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.3 Write grep commands to select the lines from a file that end with a period."
+Q2.3 Write grep commands to select the lines from a file that end with a period.
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '^.*\. *$' Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.4 Write grep commands to select the lines in a file that has one or more blank spaces.'
+> "
+Q2.4 Write grep commands to select the lines in a file that has one or more blank spaces.
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '\s+' Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -E " +" Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "Q2.5 Write grep commands to select the lines in a file and direct them to another file which has digits as
+one of the characters in that line."
+Q2.5 Write grep commands to select the lines in a file and direct them to another file which has digits as one of the characters in that line.
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep '[0-9]' Sample.txt> newfile.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ cat newfile.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself

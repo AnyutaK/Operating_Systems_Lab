@@ -1,0 +1,66 @@
+4ITA1@debian:~$ cd Anyuta_240911080
+4ITA1@debian:~/Anyuta_240911080$ cd lab4
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ date
+Monday 02 February 2026 10:54:20 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_1 10_lab4_1.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_1
+this is child process.
+Child PID: 418085
+Child PPID: 418084
+this is parent process.
+Parent PID: 418084
+Parent PPID: 412219
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ date
+Monday 02 February 2026 10:55:31 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_2 10_lab4_2.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_2
+child is executing '10_lab4_1' now 
+this is child process.
+Child PID: 420433
+Child PPID: 420432
+this is parent process.
+Parent PID: 420432
+Parent PPID: 420431
+child has finished executing 10_lab4_1 and control back to parent.
+4ITA1@debian:~/Anyuta_240911080/lab4$ echo 
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ date
+Monday 02 February 2026 11:05:33 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_3 10_lab4_3.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_3
+Parent of PID 455805 is sleeping for 20 seconds
+checking 'ps aux' in another terminal now!
+found Zombie status for child process.
+child's PID 455806 is exiting.
+
+parent process is waking up and exiting.
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ date
+Monday 02 February 2026 11:10:50 AM IST
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_5 10_lab4_5.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_5 20
+Fibonacci Series: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_5 10_lab4_5.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_5 15
+Fibonacci Series: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ date
+Monday 02 February 2026 11:16:45 AM IST
+
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_4 10_lab4_4.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_4 10 1 2 3 4 5 6 7 8 9 0
+[Selection Sort] finished in 0.000004 seconds.
+[Bubble Sort] finished in 0.000004 seconds.
+
+Final Sorted Array: 0 1 2 3 4 5 6 7 8 9 
+4ITA1@debian:~/Anyuta_240911080/lab4$ gcc -o 10_lab4_4 10_lab4_4.c
+4ITA1@debian:~/Anyuta_240911080/lab4$ ./10_lab4_4 10 122 213 345 234 452 1242 342 222 104 269
+[Bubble Sort] finished in 0.000133 seconds.
+[Selection Sort] finished in 0.000005 seconds.
+
+Final Sorted Array: 104 122 213 222 234 269 342 345 452 1242 
+4ITA1@debian:~/Anyuta_240911080/lab4$ 
+4ITA1@debian:~/Anyuta_240911080/lab4$ 

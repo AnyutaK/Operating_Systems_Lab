@@ -1,0 +1,224 @@
+4ITA1@debian:~$ date
+Monday 05 January 2026 09:27:59 AM IST
+4ITA1@debian:~$ bash
+4ITA1@debian:~$ echo $shell
+
+4ITA1@debian:~$ cd /usr/bin
+4ITA1@debian:/usr/bin$ cd~
+bash: cd~: command not found
+4ITA1@debian:/usr/bin$ cd ~
+4ITA1@debian:~$ cd Anyuta_240911080
+4ITA1@debian:~/Anyuta_240911080$ ls
+lab1
+4ITA1@debian:~/Anyuta_240911080$ cd lab1
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls
+file1.txt  file2.txt  file3.txt  file.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cd ..
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab2
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab3
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab4
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab5
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab6
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab7
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab8
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab9
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab10
+4ITA1@debian:~/Anyuta_240911080$ mkdir lab11
+4ITA1@debian:~/Anyuta_240911080$ ls
+lab1  lab10  lab11  lab2  lab3  lab4  lab5  lab6  lab7  lab8  lab9
+4ITA1@debian:~/Anyuta_240911080$ cd lab1
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat >Lab1_1.txt
+Commands and the output I copied from the command prompt.
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls -a
+.  ..  file1.txt  file2.txt  file3.txt  file.txt  Lab1_1.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [_]*
+ls: cannot access '[_]*': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [-_]*
+ls: cannot access '[-_]*': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [-_]
+ls: cannot access '[-_]': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [a-z]*
+file1.txt  file2.txt  file3.txt  file.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls file?.txt
+file1.txt  file2.txt  file3.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ head /lab1/lab1_1.txt
+head: cannot open '/lab1/lab1_1.txt' for reading: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ head lab1_1.txt
+head: cannot open 'lab1_1.txt' for reading: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat lab1_1.txt
+cat: lab1_1.txt: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ head Lab1_1.txt
+Commands and the output I copied from the command prompt.
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat Lab 1_1.txt
+cat: Lab: No such file or directory
+cat: 1_1.txt: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat Lab1_1.txt
+Commands and the output I copied from the command prompt.
+4ITA1@debian:~/Anyuta_240911080/lab1$ whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+4ITA1@debian:~/Anyuta_240911080/lab1$ locate os
+bash: locate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ lo-cate "os"
+bash: lo-cate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ locate "OS"
+bash: locate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ locate OS
+bash: locate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .-file*.1
+find: ‘.-file*.1’: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ wc Lab1_1.txt
+ 1 10 58 Lab1_1.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat>Lab1_2.txt
+^C
+4ITA1@debian:~/Anyuta_240911080/lab1$ Commands and the output I copied from the command prompt
+bash: Commands: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat>Lab1_2.txt
+Commands and the output i copied from the commands prompt-         
+1.cat
+2.heD 
+3.tail  
+4.cp
+5.mv 
+6.rm
+7.rmdir
+8.find
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat Lab1_2.txt
+Commands and the output i copied from the commands prompt- 
+1.cat
+2.heD
+3.tail
+4.cp
+5.mv
+6.rm
+7.rmdir
+8.find
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat>>Lab1_1.txt
+1.mkdir
+2.ls -a
+3.ls [a-z]*
+4.is file?.txt
+5.whereis ls
+6.wc 
+4ITA1@debian:~/Anyuta_240911080/lab1$ head Lab1_1.txt
+Commands and the output I copied from the command prompt.
+1.mkdir
+2.ls -a
+3.ls [a-z]*
+4.is file?.txt
+5.whereis ls
+6.wc 
+4ITA1@debian:~/Anyuta_240911080/lab1$ tail Lab1_1.txt
+Commands and the output I copied from the command prompt.
+1.mkdir
+2.ls -a
+3.ls [a-z]*
+4.is file?.txt
+5.whereis ls
+6.wc 
+4ITA1@debian:~/Anyuta_240911080/lab1$ cp Lab1_2.txt/file2.txt
+cp: missing destination file operand after 'Lab1_2.txt/file2.txt'
+Try 'cp --help' for more information.
+4ITA1@debian:~/Anyuta_240911080/lab1$ cp Lab1_2.txt/Anyuta_240911080
+cp: missing destination file operand after 'Lab1_2.txt/Anyuta_240911080'
+Try 'cp --help' for more information.
+4ITA1@debian:~/Anyuta_240911080/lab1$ cp Lab1_2.txt/Lab2
+cp: missing destination file operand after 'Lab1_2.txt/Lab2'
+Try 'cp --help' for more information.
+4ITA1@debian:~/Anyuta_240911080/lab1$ cp Lab1_2.txt file2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat file2.txt
+Commands and the output i copied from the commands prompt- 
+1.cat
+2.heD
+3.tail
+4.cp
+5.mv
+6.rm
+7.rmdir
+8.find
+4ITA1@debian:~/Anyuta_240911080/lab1$ cp -n Lab1_1.txt file2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat file2.txt
+Commands and the output i copied from the commands prompt- 
+1.cat
+2.heD
+3.tail
+4.cp
+5.mv
+6.rm
+7.rmdir
+8.find
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat file1.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat file.txt
+helllooo first day doing anything OS
+4ITA1@debian:~/Anyuta_240911080/lab1$ cp -f Lab1_1.txt file.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat file.txt
+Commands and the output I copied from the command prompt.
+1.mkdir
+2.ls -a
+3.ls [a-z]*
+4.is file?.txt
+5.whereis ls
+6.wc 
+4ITA1@debian:~/Anyuta_240911080/lab1$ mv file.txt dup.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls
+dup.txt  file1.txt  file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ mv -f file1.txt file2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls
+dup.txt  file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ mv -i file3.txt file2.txt
+mv: overwrite 'file2.txt'? no
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls
+dup.txt  file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ rm -i dup.txt
+rm: remove regular file 'dup.txt'? no
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls
+dup.txt  file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ rm -f dup.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls
+file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ rmdir
+rmdir: missing operand
+Try 'rmdir --help' for more information.
+4ITA1@debian:~/Anyuta_240911080/lab1$ rmdir lab1
+rmdir: failed to remove 'lab1': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .-name file3.txt
+find: ‘.-name’: No such file or directory
+file3.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .-name "file3.txt"
+find: ‘.-name’: No such file or directory
+file3.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ find . -name * .t
+find: paths must precede expression: `file3.txt'
+find: possible unquoted pattern after predicate `-name'?
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .-empty
+find: ‘.-empty’: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ find . -empty
+./file2.txt
+./file3.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ find . -name "*.txt"
+./file2.txt
+./Lab1_1.txt
+./Lab1_2.txt
+./file3.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ find . type -name'*[0-9]*'
+find: unknown predicate `-name*[0-9]*'
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .type -name '*[0-9]*'
+find: ‘.type’: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .type f -name '*[0-9]*'
+find: ‘.type’: No such file or directory
+find: ‘f’: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [0-9][0-9]*?
+ls: cannot access '[0-9][0-9]*?': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [0-9][0-9]*
+ls: cannot access '[0-9][0-9]*': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [0-9]*
+ls: cannot access '[0-9]*': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls *[0-9]*.txt
+file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls --ignore[aeiou]*.txt
+ls: unrecognized option '--ignore[aeiou]*.txt'
+Try 'ls --help' for more information.
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls --ignore="[aieou]*txt"
+file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls *????*
+file2.txt  file3.txt  Lab1_1.txt  Lab1_2.txt

@@ -1,0 +1,9 @@
+4ITA1@debian:~/Anyuta_240911080/lab2$ date
+Monday 12 January 2026 10:47:10 AM IST
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo "question 3"
+4ITA1@debian:~/Anyuta_240911080/lab2$ vi studentInformation.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep -c ":ICT:" studentInformation.txt
+6
+4ITA1@debian:~/Anyuta_240911080/lab2$ sed 's/:IT:/:Information Technology:/g' studentInformation.txt > ITStudents.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep "^1234:" studentInformation.txt | awk -F: '{ print "Average:" ($6+$7+$8)/3}'
+Average:70

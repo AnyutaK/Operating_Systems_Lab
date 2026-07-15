@@ -1,0 +1,42 @@
+4ITA1@debian:~/Anyuta_240911080$ cd lab1
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat >Lab1_1.txt
+Commands and the output I copied from the command prompt.
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls -a
+.  ..  file1.txt  file2.txt  file3.txt  file.txt  Lab1_1.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [_]*
+ls: cannot access '[_]*': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [-_]*
+ls: cannot access '[-_]*': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [-_]
+ls: cannot access '[-_]': No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls [a-z]*
+file1.txt  file2.txt  file3.txt  file.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ ls file?.txt
+file1.txt  file2.txt  file3.txt
+4ITA1@debian:~/Anyuta_240911080/lab1$ head /lab1/lab1_1.txt
+head: cannot open '/lab1/lab1_1.txt' for reading: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ head lab1_1.txt
+head: cannot open 'lab1_1.txt' for reading: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat lab1_1.txt
+cat: lab1_1.txt: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ head Lab1_1.txt
+Commands and the output I copied from the command prompt.
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat Lab 1_1.txt
+cat: Lab: No such file or directory
+cat: 1_1.txt: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ cat Lab1_1.txt
+Commands and the output I copied from the command prompt.
+4ITA1@debian:~/Anyuta_240911080/lab1$ whereis ls
+ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+4ITA1@debian:~/Anyuta_240911080/lab1$ locate os
+bash: locate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ lo-cate "os"
+bash: lo-cate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ locate "OS"
+bash: locate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ locate OS
+bash: locate: command not found
+4ITA1@debian:~/Anyuta_240911080/lab1$ find .-file*.1
+find: ‘.-file*.1’: No such file or directory
+4ITA1@debian:~/Anyuta_240911080/lab1$ wc Lab1_1.txt
+ 1 10 58 Lab1_1.txt

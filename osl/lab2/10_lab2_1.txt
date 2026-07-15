@@ -1,0 +1,41 @@
+4ITA1@debian:~$ date
+Monday 12 January 2026 09:58:47 AM IST
+4ITA1@debian:~$ cd Anyuta_240911080
+4ITA1@debian:~/Anyuta_240911080$ cd lab2
+4ITA1@debian:~/Anyuta_240911080/lab2$ echo Question1 Execute all the commands explained in this section and write the output.
+Question1 the few commands learnt
+4ITA1@debian:~/Anyuta_240911080/lab2$ ps
+    PID TTY          TIME CMD
+ 306238 pts/1    00:00:00 bash
+ 311923 pts/1    00:00:00 ps
+
+4ITA1@debian:~/Anyuta_240911080/lab2$  echo "2^5"|bc
+32
+4ITA1@debian:~/Anyuta_240911080/lab2$ sort -r Sample.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+unix commands are a set of commmands that are used to interact with unix operating system. 
+4ITA1@debian:~/Anyuta_240911080/lab2$ sort Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ wc *
+  2  42 268 Sample.txt
+4ITA1@debian:~/Anyuta_240911080/lab2$ cut -c 1-50 Sample.txt
+unix commands are a set of commmands that are used
+Unix is a powerful multi user multi-tasking operat
+4ITA1@debian:~/Anyuta_240911080/lab2$ cut -c 60- Sample.txt
+act with unix operating system. 
+m that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ wc -c Sample.txt
+268 Sample.txt
+
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep --color "Unix" Sample.txt
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ grep 'unix' Sample.txt
+unix commands are a set of commmands that are used to interact with unix operating system. 
+4ITA1@debian:~/Anyuta_240911080/lab2$ sed -e 's/unix/Unix/g' Sample.txt
+Unix commands are a set of commmands that are used to interact with Unix operating system. 
+Unix is a powerful multi user multi-tasking operating system that was develope in the 1960s. Tasks such as managing files,directorries, processes an the system software itself
+4ITA1@debian:~/Anyuta_240911080/lab2$ ps
+    PID TTY          TIME CMD
+ 306238 pts/1    00:00:00 bash
+ 335805 pts/1    00:00:00 ps
