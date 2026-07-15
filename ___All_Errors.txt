@@ -1,6 +1,0 @@
-CorrelationId: b3c8ccf9-a8a1-4e35-af4c-c817f7e1dfa1
-UTC DateTime: 07/11/2026 16:33:01
-
-The following files/folders have not been downloaded
-0. osl/lab3/TEXTFILES/testfile.text
-1. osl/lab3/testfile.text
